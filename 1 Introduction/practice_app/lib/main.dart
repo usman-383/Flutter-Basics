@@ -1,25 +1,41 @@
 import 'package:flutter/material.dart';
 
-void main() {
+void main(){
   runApp(const MyApp());
 }
 
-class MyApp extends StatefulWidget {
+class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
-  State<MyApp> createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
-  @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+    return Scaffold(
+      appBar: AppBar(
+        title: Center(
+          child:const Text('My App'),
+        )
       ),
-      home: const Text('Flutter Demo Home Page'),
+
+      body: Center(
+        child: Container(
+          width: 200,
+          height: 200,
+          decoration: BoxDecoration(
+            color: Colors.blue,
+            borderRadius: BorderRadius.circular(20),
+          ),
+          child: Center(
+            child: const Text(
+              'Hello, World!',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 20,
+              ),
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
+
