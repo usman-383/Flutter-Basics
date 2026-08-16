@@ -10,11 +10,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'My App',
       home: Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.blue,
           title: const Center(
-            child: Text('My App'),
+            child: Text('My App', style: TextStyle(fontWeight: FontWeight.bold)),
           ),
         ),
         body: Center(
@@ -31,6 +33,8 @@ class MyApp extends StatelessWidget {
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  // backgroundColor: Colors.lightBlue,
                 ),
               ),
             ),
