@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'My App',
       home: Scaffold(
-//AppBar        
+        //AppBar
         appBar: AppBar(
           backgroundColor: Colors.blue,
           title: const Center(
@@ -23,9 +23,9 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
-//Body        
+        //Body
         body:
-//Container
+            //Container
             // Center(
             //   child: Container(
             //     width: 200,
@@ -47,67 +47,74 @@ class MyApp extends StatelessWidget {
             //     ),
             //   ),
             // ),
-//Button            
+            //Button
+            // Center(
+            //   child: Column(
+            //     children: [
+            //       Center(
+            //         child: TextButton(
+            //           onPressed: () {
+            //             print('Button Pressed');
+            //           },
+            //           onLongPress: () {
+            //             print('Button Long Pressed');
+            //           },
+            //           child: const Text(
+            //             'Press Me',
+            //             style: TextStyle(
+            //               fontSize: 15,
+            //               fontWeight: FontWeight.bold,
+            //               color: Colors.black,
+            //             ),
+            //           ),
+            //         ),
+            //       ),
+            //       Center(
+            //         child: OutlinedButton(
+            //           onPressed: () {
+            //             print('Button Pressed');
+            //           },
+            //           onLongPress: () {
+            //             print('Button Long Pressed');
+            //           },
+            //           child: const Text(
+            //             'Press Me',
+            //             style: TextStyle(
+            //               fontSize: 15,
+            //               fontWeight: FontWeight.bold,
+            //               color: Colors.black,
+            //             ),
+            //           ),
+            //         ),
+            //       ),
+            //       Center(
+            //         child: ElevatedButton(
+            //           onPressed: () {
+            //             print('Button Pressed');
+            //           },
+            //           onLongPress: () {
+            //             print('Button Long Pressed');
+            //           },
+            //           child: const Text(
+            //             'Press Me',
+            //             style: TextStyle(
+            //               fontSize: 15,
+            //               fontWeight: FontWeight.bold,
+            //               color: Colors.black,
+            //             ),
+            //           ),
+            //         ),
+            //       ),
+            //     ],
+            //   ),
+            // ),
+            //Image
             Center(
-              child: Column(
-                children: [
-                  Center(
-                    child: TextButton(
-                      onPressed: () {
-                        print('Button Pressed');
-                      },
-                      onLongPress: () {
-                        print('Button Long Pressed');
-                      },
-                      child: const Text(
-                        'Press Me',
-                        style: TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black,
-                        ),
-                      ),
-                    ),
-                  ),
-
-                  Center(
-                    child: OutlinedButton(
-                      onPressed: () {
-                        print('Button Pressed');
-                      },
-                      onLongPress: () {
-                        print('Button Long Pressed');
-                      },
-                      child: const Text(
-                        'Press Me',
-                        style: TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black,
-                        ),
-                      ),
-                    ),
-                  ),
-
-                  Center(
-                    child: ElevatedButton(
-                      onPressed: () {
-                        print('Button Pressed');
-                      },
-                      onLongPress: () {
-                        print('Button Long Pressed');
-                      },
-                      child: const Text(
-                        'Press Me',
-                        style: TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
+              child: Image.asset(
+                'assets/images/Zyvora.png',
+                width: 200,
+                height: 200,
+                fit: BoxFit.cover,
               ),
             ),
       ),

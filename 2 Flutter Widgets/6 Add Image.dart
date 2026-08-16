@@ -7,4 +7,12 @@
   3)Then use the Image widget to display the image in your app.
   4)The Image widget can display images from various sources such
    as local files, network URLs, or assets.
+
+  Example:
+  Image.asset(
+    'assets/images/my_image.png',     //path of the image
+    width: 200,                       //width of the image
+    height: 200,                      //height of the image
+    fit: BoxFit.cover,                //fit of the image
+  );
 */
