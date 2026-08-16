@@ -19,6 +19,9 @@
     onPressed: () {
       // Do something when the button is pressed
     },
+    onLongPress: () {
+      // Do something when the button is long pressed
+    },
     child: const Text('Press Me'),
   );
 
@@ -26,12 +29,18 @@
     onPressed: () {
       // Do something when the button is pressed
     },
+    onLongPress: () {
+      // Do something when the button is long pressed
+    },
     child: const Text('Press Me'),
   );
 
   OutlinedButton(
     onPressed: () {
       // Do something when the button is pressed
+    },
+    onLongPress: () {
+      // Do something when the button is long pressed
     },
     child: const Text('Press Me'),
   );
