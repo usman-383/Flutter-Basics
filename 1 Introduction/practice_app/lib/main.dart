@@ -109,13 +109,32 @@ class MyApp extends StatelessWidget {
             //   ),
             // ),
             //Image
-            Center(
-              child: Image.asset(
-                'assets/images/Zyvora.png',
-                width: 200,
-                height: 200,
-                fit: BoxFit.cover,
-              ),
+            // Center(
+            //   child: Image.asset(
+            //     'assets/images/Zyvora.png',
+            //     width: 200,
+            //     height: 200,
+            //     fit: BoxFit.cover,
+            //   ),
+            // ),
+//Row and Column
+            Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children:[
+
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                  Text('A', style: TextStyle(fontSize: 20,)),
+                  Text('B', style: TextStyle(fontSize: 20,)),
+                  Text('C', style: TextStyle(fontSize: 20,)),
+                ],),
+                Text('A', style: TextStyle(fontSize: 20,)),
+                Text('B', style: TextStyle(fontSize: 20,)),
+                Text('C', style: TextStyle(fontSize: 20,)),
+              ],
             ),
       ),
     );
