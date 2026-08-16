@@ -118,23 +118,46 @@ class MyApp extends StatelessWidget {
             //   ),
             // ),
 //Row and Column
-            Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children:[
+            // Column(
+            //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //   crossAxisAlignment: CrossAxisAlignment.start,
+            //   children:[
 
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                  Text('A', style: TextStyle(fontSize: 20,)),
-                  Text('B', style: TextStyle(fontSize: 20,)),
-                  Text('C', style: TextStyle(fontSize: 20,)),
-                ],),
-                Text('A', style: TextStyle(fontSize: 20,)),
-                Text('B', style: TextStyle(fontSize: 20,)),
-                Text('C', style: TextStyle(fontSize: 20,)),
-              ],
+            //     Row(
+            //       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //       crossAxisAlignment: CrossAxisAlignment.start,
+            //       children: [
+            //       Text('A', style: TextStyle(fontSize: 20,)),
+            //       Text('B', style: TextStyle(fontSize: 20,)),
+            //       Text('C', style: TextStyle(fontSize: 20,)),
+            //     ],),
+            //     Text('A', style: TextStyle(fontSize: 20,)),
+            //     Text('B', style: TextStyle(fontSize: 20,)),
+            //     Text('C', style: TextStyle(fontSize: 20,)),
+            //   ],
+            // ),
+
+            Center(
+              child: InkWell(
+                onTap: () {
+                  print('Container Tapped');
+                },
+
+                onLongPress: () {
+                  print('Container Long Pressed');
+                },
+
+                onDoubleTap: () {
+                  print('Container Double Tapped');
+                },
+                
+                child: Container(
+                  width: 200,
+                  height: 200,
+                  color: Colors.blue,
+                  
+                ),
+              ),
             ),
       ),
     );
