@@ -209,52 +209,174 @@ class MyApp extends StatelessWidget {
       // )
 
       //8 InkWell
-     Center(
-      child: InkWell(
-        onTap: () {
-          print('InkWell Tapped');
-        },
+  //    Center(
+  //     child: InkWell(
+  //       onTap: () {
+  //         print('InkWell Tapped');
+  //       },
 
-        onLongPress: () {
-          print('InkWell Long Pressed');
-        },
+  //       onLongPress: () {
+  //         print('InkWell Long Pressed');
+  //       },
 
-        onDoubleTap: (){
-          print('InkWell Double Tapped');
-        },
+  //       onDoubleTap: (){
+  //         print('InkWell Double Tapped');
+  //       },
 
-        child: Container(
-          width: 200,
-          height: 200,
-          color: Colors.blue,
+  //       child: Container(
+  //         width: 200,
+  //         height: 200,
+  //         color: Colors.blue,
           
-          child: Center(child: InkWell(
-            onTap: () {
-              print('Inner InkWell Tapped');
-            },
+  //         child: Center(child: InkWell(
+  //           onTap: () {
+  //             print('Inner InkWell Tapped');
+  //           },
 
-            onLongPress: () {
-              print('Inner InkWell Long Pressed');
-            },
+  //           onLongPress: () {
+  //             print('Inner InkWell Long Pressed');
+  //           },
 
-            onDoubleTap: (){
-              print('Inner InkWell Double Tapped');
-            },
+  //           onDoubleTap: (){
+  //             print('Inner InkWell Double Tapped');
+  //           },
 
-            child: Text(
-              'Click Me', 
-              style: TextStyle(
-                fontSize: 25, 
-                fontWeight: FontWeight(600), 
-                color: Colors.white
-              ),
-            )
+  //           child: Text(
+  //             'Click Me', 
+  //             style: TextStyle(
+  //               fontSize: 25, 
+  //               fontWeight: FontWeight(600), 
+  //               color: Colors.white
+  //             ),
+  //           )
+  //         ),
+  //       )
+  //     ),
+  //   ),
+  // )
+
+  //9 ScrollView
+    Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: SingleChildScrollView(
+        child: Column(
+          children: [
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                Container(
+                  margin: EdgeInsets.only(right: 10),
+                  width:200,
+                  height: 200,
+                  color: Colors.blue, 
+                     ),
+                Container(
+                  margin: EdgeInsets.only(right: 10),
+                  width:200,
+                  height: 200,
+                  color: Colors.yellowAccent, 
+                     ),
+                Container(
+                  margin: EdgeInsets.only(right: 10),
+                  width:200,
+                  height: 200,
+                  color: Colors.black,  
+                     ),
+                Container(
+                  margin: EdgeInsets.only(right: 10),
+                  width:200,
+                  height: 200,
+                  color: Colors.red, 
+                     ),
+                Container(
+                  margin: EdgeInsets.only(right: 10),
+                  width:200,
+                  height: 200,
+                  color: Colors.blue, 
+                     ),
+                Container(
+                  margin: EdgeInsets.only(right: 10),
+                  width:200,
+                  height: 200,
+                  color: Colors.yellowAccent, 
+                     ),
+                Container(
+                  margin: EdgeInsets.only(right: 10),
+                  width:200,
+                  height: 200,
+                  color: Colors.black,  
+                     ),
+                Container(
+                  margin: EdgeInsets.only(right: 10),
+                  width:200,
+                  height: 200,
+                  color: Colors.red, 
+                     ),
+                Container(
+                  margin: EdgeInsets.only(right: 10),
+                  width:200,
+                  height: 200,
+                  color: Colors.blue, 
+                     ),
+                Container(
+                  margin: EdgeInsets.only(right: 10),
+                  width:200,
+                  height: 200,
+                  color: Colors.yellowAccent, 
+                     ),
+                Container(
+                  margin: EdgeInsets.only(right: 10),
+                  width:200,
+                  height: 200,
+                  color: Colors.black,  
+                     ),
+                Container(
+                  margin: EdgeInsets.only(right: 10),
+                  width:200,
+                  height: 200,
+                  color: Colors.red, 
+                     ),
+              ],
+            ),
           ),
-        )
+        
+          Container(
+            margin: EdgeInsets.only(bottom: 10),
+            
+            height: 200,
+            color: Colors.yellowAccent, 
+               ),
+        
+          Container(
+            margin: EdgeInsets.only(bottom: 10),
+            
+            height: 200,
+            color: Colors.orange, 
+               ),
+          Container(
+            margin: EdgeInsets.only(bottom: 10),
+            
+            height: 200,
+            color: Colors.green, 
+               ),
+          Container(
+            margin: EdgeInsets.only(bottom: 10),
+            
+            height: 200,
+            color: Colors.black 
+               ),
+          Container(
+            margin: EdgeInsets.only(bottom: 10),
+            
+            height: 200,         
+            color: Colors.red, 
+               )
+              ],
+            ),
       ),
-    ),
-  )
-),
-);
-}
+    )
+      ),
+    );
+  }
 }
