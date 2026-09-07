@@ -143,71 +143,81 @@ class MyApp extends StatelessWidget {
       // ),
 
       //7 Row & Column
-      Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        // crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Text(
-                'Item 1',
-                style: TextStyle(
-                  fontSize: 25, 
-                  fontWeight: FontWeight.bold, 
-                  color: Colors.blue
-                ),
-              ),
+      // Column(
+      //   mainAxisAlignment: MainAxisAlignment.spaceAround,
+      //   // crossAxisAlignment: CrossAxisAlignment.center,
+      //   children: [
+      //     Row(
+      //       mainAxisAlignment: MainAxisAlignment.spaceAround,
+      //       crossAxisAlignment: CrossAxisAlignment.center,
+      //       children: [
+      //         Text(
+      //           'Item 1',
+      //           style: TextStyle(
+      //             fontSize: 25, 
+      //             fontWeight: FontWeight.bold, 
+      //             color: Colors.blue
+      //           ),
+      //         ),
 
-              Text(
-                'Item 2', 
-                style: TextStyle(
-                  fontSize: 25, 
-                  fontWeight: FontWeight.bold, 
-                  color: Colors.blue
-                ),
-              ),
+      //         Text(
+      //           'Item 2', 
+      //           style: TextStyle(
+      //             fontSize: 25, 
+      //             fontWeight: FontWeight.bold, 
+      //             color: Colors.blue
+      //           ),
+      //         ),
 
-              Text(
-                'Item 3', 
-                style: TextStyle(
-                  fontSize: 25, 
-                  fontWeight: FontWeight.bold, 
-                  color: Colors.blue
-                ),
-              ),
+      //         Text(
+      //           'Item 3', 
+      //           style: TextStyle(
+      //             fontSize: 25, 
+      //             fontWeight: FontWeight.bold, 
+      //             color: Colors.blue
+      //           ),
+      //         ),
 
-          ],
-        ),
-        Text(
-          'Item 1',
-          style: TextStyle(
-            fontSize: 25, 
-            fontWeight: FontWeight.bold, 
-            color: Colors.blue
-          ),
-        ),
-        Text(
-          'Item 2', 
-          style: TextStyle(
-            fontSize: 25, 
-            fontWeight: FontWeight.bold, 
-            color: Colors.blue
-          ),
-        ),
+      //     ],
+      //   ),
+      //   Text(
+      //     'Item 1',
+      //     style: TextStyle(
+      //       fontSize: 25, 
+      //       fontWeight: FontWeight.bold, 
+      //       color: Colors.blue
+      //     ),
+      //   ),
+      //   Text(
+      //     'Item 2', 
+      //     style: TextStyle(
+      //       fontSize: 25, 
+      //       fontWeight: FontWeight.bold, 
+      //       color: Colors.blue
+      //     ),
+      //   ),
 
-        Text(
-          'Item 3', 
-          style: TextStyle(
-            fontSize: 25, 
-            fontWeight: FontWeight.bold, 
-            color: Colors.blue
-          ),
+      //   Text(
+      //     'Item 3', 
+      //     style: TextStyle(
+      //       fontSize: 25, 
+      //       fontWeight: FontWeight.bold, 
+      //       color: Colors.blue
+      //     ),
+      //   ),
+      //   ],
+      // )
+
+      //8 InkWell
+      Container(
+        child: ElevatedButton(
+          onPressed: () {
+            print('Button Pressed');
+          },
+          child: Text('Click Here'),
         ),
-        ],
-      )
-      )
+      ),
+      ),
     );
   }
 }
