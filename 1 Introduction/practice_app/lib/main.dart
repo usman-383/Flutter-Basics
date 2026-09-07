@@ -90,33 +90,58 @@ class MyApp extends StatelessWidget {
       // )
 
       //5 Column
-      Center(
-        child: Container(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Text('Item 1',style: TextStyle(
-                fontSize: 25,
-                color: Colors.blueAccent,
-                fontWeight: FontWeight.bold,
-              )),
+      // Center(
+      //   child: Container(
+      //     child: Column(
+      //       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      //       crossAxisAlignment: CrossAxisAlignment.center,
+      //       children: [
+      //         Text('Item 1',style: TextStyle(
+      //           fontSize: 25,
+      //           color: Colors.blueAccent,
+      //           fontWeight: FontWeight.bold,
+      //         )),
           
-              Text('Item 2',style: TextStyle(
-                fontSize: 25,
-                color: Colors.blueAccent,
-                fontWeight: FontWeight.bold,
-              )),
+      //         Text('Item 2',style: TextStyle(
+      //           fontSize: 25,
+      //           color: Colors.blueAccent,
+      //           fontWeight: FontWeight.bold,
+      //         )),
           
-              Text('Item 3',style: TextStyle(
-                fontSize: 25,
-                color: Colors.blueAccent,
-                fontWeight: FontWeight.bold,
-              )),
-          ],),
-        ),
-      )
+      //         Text('Item 3',style: TextStyle(
+      //           fontSize: 25,
+      //           color: Colors.blueAccent,
+      //           fontWeight: FontWeight.bold,
+      //         )),
+      //     ],),
+      //   ),
+      // )
+
+      //6 Row
+      Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Text('Item 1',style: TextStyle(
+            fontSize: 25,
+            color: Colors.blueAccent,
+            fontWeight: FontWeight.bold,
+          )),
+      
+          Text('Item 2',style: TextStyle(
+            fontSize: 25,
+            color: Colors.blueAccent,
+            fontWeight: FontWeight.bold,
+          )),
+      
+          Text('Item 3',style: TextStyle(
+            fontSize: 25,
+            color: Colors.blueAccent,
+            fontWeight: FontWeight.bold,
+          )),
+      ],
       ),
+      )
     );
   }
 }
