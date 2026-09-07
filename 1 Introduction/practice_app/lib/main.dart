@@ -118,29 +118,95 @@ class MyApp extends StatelessWidget {
       // )
 
       //6 Row
-      Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.center,
+      // Row(
+      //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      //   crossAxisAlignment: CrossAxisAlignment.center,
+      //   children: [
+      //     Text('Item 1',style: TextStyle(
+      //       fontSize: 25,
+      //       color: Colors.blueAccent,
+      //       fontWeight: FontWeight.bold,
+      //     )),
+      
+      //     Text('Item 2',style: TextStyle(
+      //       fontSize: 25,
+      //       color: Colors.blueAccent,
+      //       fontWeight: FontWeight.bold,
+      //     )),
+      
+      //     Text('Item 3',style: TextStyle(
+      //       fontSize: 25,
+      //       color: Colors.blueAccent,
+      //       fontWeight: FontWeight.bold,
+      //     )),
+      // ],
+      // ),
+
+      //7 Row & Column
+      Column(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        // crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Text('Item 1',style: TextStyle(
-            fontSize: 25,
-            color: Colors.blueAccent,
-            fontWeight: FontWeight.bold,
-          )),
-      
-          Text('Item 2',style: TextStyle(
-            fontSize: 25,
-            color: Colors.blueAccent,
-            fontWeight: FontWeight.bold,
-          )),
-      
-          Text('Item 3',style: TextStyle(
-            fontSize: 25,
-            color: Colors.blueAccent,
-            fontWeight: FontWeight.bold,
-          )),
-      ],
-      ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Text(
+                'Item 1',
+                style: TextStyle(
+                  fontSize: 25, 
+                  fontWeight: FontWeight.bold, 
+                  color: Colors.blue
+                ),
+              ),
+
+              Text(
+                'Item 2', 
+                style: TextStyle(
+                  fontSize: 25, 
+                  fontWeight: FontWeight.bold, 
+                  color: Colors.blue
+                ),
+              ),
+
+              Text(
+                'Item 3', 
+                style: TextStyle(
+                  fontSize: 25, 
+                  fontWeight: FontWeight.bold, 
+                  color: Colors.blue
+                ),
+              ),
+
+          ],
+        ),
+        Text(
+          'Item 1',
+          style: TextStyle(
+            fontSize: 25, 
+            fontWeight: FontWeight.bold, 
+            color: Colors.blue
+          ),
+        ),
+        Text(
+          'Item 2', 
+          style: TextStyle(
+            fontSize: 25, 
+            fontWeight: FontWeight.bold, 
+            color: Colors.blue
+          ),
+        ),
+
+        Text(
+          'Item 3', 
+          style: TextStyle(
+            fontSize: 25, 
+            fontWeight: FontWeight.bold, 
+            color: Colors.blue
+          ),
+        ),
+        ],
+      )
       )
     );
   }
