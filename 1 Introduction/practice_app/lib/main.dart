@@ -41,46 +41,53 @@ class MyApp extends StatelessWidget {
         // ),),
 
       //3 Button
-      Column(
-        children: [
-          //Text Button
-          TextButton(
-            onPressed: () {
-              print('Text Button Pressed');
-            }, 
+      // Column(
+      //   children: [
+      //     //Text Button
+      //     TextButton(
+      //       onPressed: () {
+      //         print('Text Button Pressed');
+      //       }, 
           
-            onLongPress: () {
-              print('Text Button Long Pressed');
-            },
+      //       onLongPress: () {
+      //         print('Text Button Long Pressed');
+      //       },
             
-            child:Text('Click Here')),
+      //       child:Text('Click Here')),
 
-          //Elevated Button
-          ElevatedButton(
-            onPressed: () {
-              print('Elevated Button Pressed');
-            }, 
+      //     //Elevated Button
+      //     ElevatedButton(
+      //       onPressed: () {
+      //         print('Elevated Button Pressed');
+      //       }, 
           
-            onLongPress: () {
-              print('Elevated Button Long Pressed');
-            },
+      //       onLongPress: () {
+      //         print('Elevated Button Long Pressed');
+      //       },
             
-            child:Text('Click Here')),
+      //       child:Text('Click Here')),
 
-          //Outlined Button
-          OutlinedButton(
-            onPressed: () {
-              print('Outlined Button Pressed');
-            }, 
+      //     //Outlined Button
+      //     OutlinedButton(
+      //       onPressed: () {
+      //         print('Outlined Button Pressed');
+      //       }, 
           
-            onLongPress: () {
-              print('Outlined Button Long Pressed');
-            },
+      //       onLongPress: () {
+      //         print('Outlined Button Long Pressed');
+      //       },
             
-            child:Text('Click Here')),
-        ],
-      ),
+      //       child:Text('Click Here')),
+      //   ],
+      // ),
         
+      //4 Image
+
+      Center(
+        child: Image.asset(
+          'assets/images/Zyvora logo.png',     //path of the image//fit of the image
+        ),
+      )
 
       ),
     );
