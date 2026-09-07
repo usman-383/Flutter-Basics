@@ -18,17 +18,28 @@ class MyApp extends StatelessWidget {
           title: Center(child: const Text('Hello World')),
         ),
         body:
-        Center(
-          child: 
-         Container(
-          width: 200,
-          height: 200,
-          color: Colors.blue,
 
-          child: Center(child: Text('Container')),
-        ),
-        
-        )
+        //1 Container
+        // Center(
+        //   child: 
+        //  Container(
+        //   width: 200,
+        //   height: 200,
+        //   color: Colors.blue,
+
+        //   child: Center(child: Text('Container')),
+        // ),
+        // )
+
+      //2 Text
+        Text('Hello world', style: TextStyle(
+          fontSize: 25,
+          color: Colors.blueAccent,
+          fontWeight: FontWeight.bold,
+          backgroundColor: Colors.orange,
+          
+        ),),
+
       ),
     );
   }
