@@ -32,13 +32,55 @@ class MyApp extends StatelessWidget {
         // )
 
       //2 Text
-        Text('Hello world', style: TextStyle(
-          fontSize: 25,
-          color: Colors.blueAccent,
-          fontWeight: FontWeight.bold,
-          backgroundColor: Colors.orange,
+        // Text('Hello world', style: TextStyle(
+        //   fontSize: 25,
+        //   color: Colors.blueAccent,
+        //   fontWeight: FontWeight.bold,
+        //   backgroundColor: Colors.orange,
+
+        // ),),
+
+      //3 Button
+      Column(
+        children: [
+          //Text Button
+          TextButton(
+            onPressed: () {
+              print('Text Button Pressed');
+            }, 
           
-        ),),
+            onLongPress: () {
+              print('Text Button Long Pressed');
+            },
+            
+            child:Text('Click Here')),
+
+          //Elevated Button
+          ElevatedButton(
+            onPressed: () {
+              print('Elevated Button Pressed');
+            }, 
+          
+            onLongPress: () {
+              print('Elevated Button Long Pressed');
+            },
+            
+            child:Text('Click Here')),
+
+          //Outlined Button
+          OutlinedButton(
+            onPressed: () {
+              print('Outlined Button Pressed');
+            }, 
+          
+            onLongPress: () {
+              print('Outlined Button Long Pressed');
+            },
+            
+            child:Text('Click Here')),
+        ],
+      ),
+        
 
       ),
     );
