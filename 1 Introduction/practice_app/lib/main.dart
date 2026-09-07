@@ -83,12 +83,35 @@ class MyApp extends StatelessWidget {
         
       //4 Image
 
-      Center(
-        child: Image.asset(
-          'assets/images/Zyvora logo.png',     //path of the image//fit of the image
-        ),
-      )
+      // Center(
+      //   child: Image.asset(
+      //     'assets/images/Zyvora logo.png',     //path of the image//fit of the image
+      //   ),
+      // )
 
+      //5 Row & Column
+      Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Text('Item 1',style: TextStyle(
+            fontSize: 25,
+            color: Colors.blueAccent,
+            fontWeight: FontWeight.bold,
+          )),
+
+          Text('Item 2',style: TextStyle(
+            fontSize: 25,
+            color: Colors.blueAccent,
+            fontWeight: FontWeight.bold,
+          )),
+
+          Text('Item 3',style: TextStyle(
+            fontSize: 25,
+            color: Colors.blueAccent,
+            fontWeight: FontWeight.bold,
+          )),
+      ],)
       ),
     );
   }
