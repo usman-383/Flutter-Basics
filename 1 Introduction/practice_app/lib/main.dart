@@ -209,15 +209,52 @@ class MyApp extends StatelessWidget {
       // )
 
       //8 InkWell
-      Container(
-        child: ElevatedButton(
-          onPressed: () {
-            print('Button Pressed');
-          },
-          child: Text('Click Here'),
-        ),
+     Center(
+      child: InkWell(
+        onTap: () {
+          print('InkWell Tapped');
+        },
+
+        onLongPress: () {
+          print('InkWell Long Pressed');
+        },
+
+        onDoubleTap: (){
+          print('InkWell Double Tapped');
+        },
+
+        child: Container(
+          width: 200,
+          height: 200,
+          color: Colors.blue,
+          
+          child: Center(child: InkWell(
+            onTap: () {
+              print('Inner InkWell Tapped');
+            },
+
+            onLongPress: () {
+              print('Inner InkWell Long Pressed');
+            },
+
+            onDoubleTap: (){
+              print('Inner InkWell Double Tapped');
+            },
+
+            child: Text(
+              'Click Me', 
+              style: TextStyle(
+                fontSize: 25, 
+                fontWeight: FontWeight(600), 
+                color: Colors.white
+              ),
+            )
+          ),
+        )
       ),
-      ),
-    );
-  }
+    ),
+  )
+),
+);
+}
 }
